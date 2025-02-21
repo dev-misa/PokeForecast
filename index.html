@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Poké Weather</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+  </head>
+
+  <body>
+    <div class="PokeWeather">
+      <img src="public/PokeWeather2Logo.png" alt="PokeWeather" />
+    </div>
+    <form class="weatherForm">
+      <input type="text" class="cityInput" placeholder="Enter a city." />
+      <button id="toggleFooterBtn" type="submit">Find weather</button>
+    </form>
+
+    <div class="card" style="display: none"></div>
+
+    <script src="index.js"></script>
+    <footer>
+      <small>
+        <p>&copy; <span id="year"></span> Misael T. & Jesse G.</p>
+      </small>
+    </footer>
+    <script>
+      let footerShown = false; 
+document.getElementById("toggleFooterBtn").addEventListener("click", function() {
+  const footer = document.querySelector("footer");
+  if (!footerShown) {
+    footer.style.display = "block"; 
+    footerShown = true; 
+  } else {
+    //intentionally left blank
+  }
+        });
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
