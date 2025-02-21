@@ -5,7 +5,6 @@ This Weather App provides real-time weather information using a Weather API and 
 Key features:
  * Dynamic Weather Information: Fetches and displays real-time weather details for any given city.
  * Day/Night Mode: The app checks the time zone of the city using the Timezone API and adjusts the appearance of the weather card accordingly. During the day, the card is styled in warm, vibrant colors (orange), and at night, it switches to a cooler, dark theme (black).
-<hr>
 <div align="center">
-  <img src="https://pokeforecast.netlify.app/public/PokeWeather2Logo.png" alt="PokeForecast Logo" width="500"/>
+  <img src="https://pokeforecast.netlify.app/public/PokeWeather2Logo.png" alt="PokeForecast Logo" width="450"/>
 </div>
